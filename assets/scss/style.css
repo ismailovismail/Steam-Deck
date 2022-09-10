@@ -83,14 +83,31 @@ section .container-fluid .head p {
   display: flex;
   justify-content: center;
 }
+section .container-fluid .head .buttons {
+  width: 60px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section .container-fluid .head .lang-btn .change-lang {
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+section .container-fluid .head .mode-btn .change-mode {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 section .container-fluid .into {
   display: flex;
   width: 60%;
+  height: 450px;
   background-color: white;
+  position: relative;
+  z-index: 555555;
 }
 section .container-fluid .into .text-butons {
   width: 100%;
-  height: 350px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -105,17 +122,7 @@ section .container-fluid .into .text-butons .buton-text {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-animation-name: kecid;
-          animation-name: kecid;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
-@-webkit-keyframes kecid {}
-@keyframes kecid {}
 section .container-fluid .into .text-butons .buton-text:hover h1 {
   color: rgba(0, 0, 0, 0.521);
 }
@@ -145,6 +152,24 @@ section .container-fluid .into .text-butons .buton-text.active h1 {
 }
 section .container-fluid .into .text-butons .buton-text.active p {
   color: black;
+}
+section .container-fluid .into .text-butons .buton-text.dark-active h1 {
+  color: gray;
+}
+section .container-fluid .into .text-butons .buton-text.dark-active p {
+  color: gray;
+}
+section .container-fluid .into .text-butons .blck-buton h1 {
+  color: white;
+}
+section .container-fluid .into .text-butons .blck-buton p {
+  color: white;
+}
+section .container-fluid .into .text-butons .blck-buton:hover h1 {
+  color: white;
+}
+section .container-fluid .into .text-butons .blck-buton:hover p {
+  color: white;
 }
 section .container-fluid .into .videos {
   width: 20%;
@@ -221,6 +246,9 @@ section .container-fluid .into .videos video {
   90% {
     background-color: cadetblue;
   }
+  100% {
+    background-color: red;
+  }
 }
 @keyframes renkdeyisimi {
   0% {
@@ -243,6 +271,9 @@ section .container-fluid .into .videos video {
   }
   90% {
     background-color: cadetblue;
+  }
+  100% {
+    background-color: red;
   }
 }
 
